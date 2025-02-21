@@ -3,7 +3,6 @@ from flask import Flask, jsonify
 app = Flask(__name__)
 
 @app.route("/users", methods=["GET"])
-
 def get_users():
     return jsonify([{ "id": 1, "name": "Alice" }, { "id": 2, "name":
 "Bob" }])
